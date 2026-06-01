@@ -50,31 +50,10 @@ function closeSidebar() {
 
 /** Reads every subfolder inside Music **/
 async function getMusicFolders() {
-    const response = await fetch("Music/");
-    const html = await response.text();
-    const div = document.createElement("div");
-    div.innerHTML = html;
-
-    const folders = new Set();
-
-    for (const link of div.querySelectorAll("a")) {
-        const href = link.getAttribute("href");
-        if (!href || href.includes("..") || href.includes(".htaccess")) continue;
-
-        let folderName = "";
-
-        if (href.endsWith("/")) {
-            folderName = href.replace(/\/$/, "").split("/").pop();
-        } else if (!href.includes(".") && !href.startsWith("http")) {
-            folderName = href.split("/").pop();
-        }
-
-        if (folderName && folderName.toLowerCase() !== "music") {
-            folders.add(folderName);
-        }
-    }
-
-    return Array.from(folders).sort((a, b) => a.localeCompare(b));
+    const response = await fetch("Music/playlists.json");
+    const data = await response.json();
+    const playlists = data.playlists;
+    return playlists;
 }
 
 async function getAlbumInfo(folder) {
@@ -93,18 +72,9 @@ async function getAlbumInfo(folder) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    const response = await fetch(`${folder}/`);
-    const html = await response.text();
-    const div = document.createElement("div");
-    div.innerHTML = html;
-
-    songs = [];
-    for (const link of div.querySelectorAll("a")) {
-        const href = link.getAttribute("href");
-        if (href && href.endsWith(".mp3")) {
-            songs.push(decodeURIComponent(href.split("/").pop()));
-        }
-    }
+    const response = await fetch(`${folder}/songs.json`);
+    const data = await response.json();
+    songs = data.songs;
 
     const songUL = document.querySelector(".song-list ul");
     songUL.innerHTML = "";
@@ -119,7 +89,7 @@ async function getSongs(folder) {
         const folderName = folder.split("/").pop();
         albumInfo = await getAlbumInfo(folderName);
     } catch {
-        /* use default artist label */
+        
     }
 
     for (const song of songs) {
