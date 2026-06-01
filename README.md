@@ -1,0 +1,56 @@
+# Spotify Clone 🎵
+
+A responsive Spotify-inspired music streaming web application built using HTML, CSS and JavaScript. This project recreates the core Spotify user interface and provides an interactive music player experience with playlist management, playback controls and responsive design.
+
+## 🚀 Features
+
+- Modern Spotify-inspired UI
+- Responsive design for desktop and mobile devices
+- Dynamic playlist loading
+- Music playback functionality
+- Play/Pause controls
+- Previous/Next track navigation
+- Interactive seekbar
+- Volume control and mute functionality
+- Sidebar navigation
+- Album and playlist cards
+- Real-time song duration display
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla JS)
+
+## 📂 Project Structure
+
+
+Spotify Clone/
+│
+├── Icons/
+├── Music/
+├── Spotify Clone.html
+├── style.css
+├── utility.css
+├── script.js
+└── favicon.ico
+
+
+🎯 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+DOM Manipulation
+Event Handling
+Audio API Integration
+Responsive Web Design
+JavaScript Async Functions
+Dynamic Content Rendering
+UI/UX Development
+
+📸 Screenshots
+Screenshot 2026-06-02 010005.png
+Screenshot 2026-06-02 010027.png
+
+👨‍💻 Author
+Muhammad Farhan

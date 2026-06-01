@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="sr-only">Spotify Web Player: Music for everyone</h1>
+
+    <div class="sidebar-overlay" aria-hidden="true"></div>
+
+    <div class="main-container flex">
+        <aside class="left" id="sidebar" aria-label="Sidebar">
+            <button type="button" class="close invert mobile-only" aria-label="Close menu">
+                <img src="Icons/close.svg" alt="">
+            </button>
+
+            <nav class="icon-group bg-grey rounded" aria-label="Primary">
+                <a class="logo flex align-center" href="#">
+                    <img src="Icons/spotify icon.svg" alt="">
+                    <span>Spotify</span>
+                </a>
+                <ul>
+                    <li>
+                        <a class="flex align-center" href="#">
+                            <img src="Icons/home icon.svg" alt="">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex align-center" href="#">
+                            <img src="Icons/search icon.svg" alt="">
+                            Search
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="library bg-grey rounded" aria-labelledby="library-heading">
+                <div class="library-icon flex">
+                    <img class="invert" src="Icons/playlist.svg" alt="">
+                    <h2 id="library-heading">Your Library</h2>
+                </div>
+
+                <div class="song-list" aria-live="polite">
+                    <ul></ul>
+                </div>
+
+                <footer class="site-footer">
+                    <a href="https://www.spotify.com/pk-en/legal/">Legal</a>
+                    <a href="https://www.spotify.com/pk-en/safetyandprivacy/">Privacy Center</a>
+                    <a href="https://www.spotify.com/pk-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/pk-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3">About Ads</a>
+                </footer>
+            </section>
+        </aside>
+
+        <main class="right">
+            <header class="header">
+                <nav class="nav invert flex" aria-label="Playback navigation">
+                    <button type="button" class="hamburger icon-btn" aria-label="Open menu">
+                        <img src="Icons/hamburger.svg" alt="">
+                    </button>
+                    <button type="button" class="next-prev icon-btn" aria-label="Go back">
+                        <img src="Icons/left chevron.svg" alt="">
+                    </button>
+                    <button type="button" class="next-prev icon-btn" aria-label="Go forward">
+                        <img src="Icons/right chevron.svg" alt="">
+                    </button>
+                </nav>
+                <div class="buttons flex">
+                    <button type="button" class="btn black">Sign Up</button>
+                    <button type="button" class="btn white">Log In</button>
+                </div>
+            </header>
+
+            <section class="playlists bg-grey rounded" aria-labelledby="playlists-heading">
+                <h2 id="playlists-heading">Spotify Playlists</h2>
+                <div class="cards" aria-live="polite"></div>
+            </section>
+        </main>
+    </div>
+
+    <audio id="player" preload="metadata" playsinline></audio>
+
+    <footer class="playbar" aria-label="Playback controls">
+        <input type="range" class="seekbar" id="seekbar" min="0" max="100" value="0" step="0.1"
+            aria-label="Seek" aria-valuemin="0" aria-valuemax="100">
+        <div class="songinfo" aria-live="polite"></div>
+        <div class="playbar-btn">
+            <button type="button" class="icon-btn" aria-label="Previous track">
+                <img id="previous" src="Icons/previous.svg" alt="">
+            </button>
+            <button type="button" class="icon-btn" aria-label="Play or pause">
+                <img id="play" src="Icons/play.svg" alt="">
+            </button>
+            <button type="button" class="icon-btn" aria-label="Next track">
+                <img id="next" src="Icons/next.svg" alt="">
+            </button>
+        </div>
+        <div class="timevol">
+            <div class="songtime" aria-live="polite"></div>
+            <div class="volume">
+                <button type="button" class="volume-toggle icon-btn" aria-label="Mute or unmute">
+                    <img class="volume-icon" src="Icons/volume.svg" alt="">
+                </button>
+                <div class="volume-bar">
+                    <input type="range" id="volume" name="volume" min="0" max="1" step="0.01" value="0.5"
+                        aria-label="Volume">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

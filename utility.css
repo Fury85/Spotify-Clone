@@ -1,0 +1,59 @@
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bg-black {
+    background-color: #000000;
+    color: white;
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+.invert {
+    filter: invert(1);
+    border: none;
+}
+
+.rounded {
+    border-radius: 7px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.icon-btn {
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn:not(.hamburger) {
+    display: inline-flex;
+}
+
+.icon-btn:focus-visible {
+    outline: 2px solid #1db954;
+    outline-offset: 2px;
+}
