@@ -26,13 +26,14 @@ A responsive Spotify-inspired music streaming web application built using HTML, 
 
 
 Spotify Clone/
+
 │
 
 ├── Icons/
 
 ├── Music/
 
-├── Spotify Clone.html
+├── index.html
 
 ├── style.css
 
