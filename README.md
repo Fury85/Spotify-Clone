@@ -36,7 +36,7 @@ Spotify Clone/
 └── favicon.ico
 
 
-🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 
 Through this project, I gained practical experience in:
 
@@ -48,7 +48,7 @@ Through this project, I gained practical experience in:
 - Dynamic Content Rendering
 - UI/UX Development
 
-📸 Screenshots
+## 📸 Screenshots
 
 ### Desktop view
 
@@ -58,9 +58,9 @@ Through this project, I gained practical experience in:
 
 ![Mobile](screenshots/mobile%20view.png)
 
-🌐 Live Demo
+## 🌐 Live Demo
 
-https://spotify-clone-old-version.netlify.app/
+[View Live Demo](https://spotify-clone-old-version.netlify.app/)
 
-👨‍💻 Author
+## 👨‍💻 Author
 Muhammad Farhan
