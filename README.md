@@ -1,4 +1,4 @@
-# Spotify Clone 🎵
+# Spotify-Music-Player-Clone 🎵
 
 A responsive Spotify-inspired music streaming web application built using HTML, CSS and JavaScript. This project recreates the core Spotify user interface and provides an interactive music player experience with playlist management, playback controls and responsive design.
 
@@ -26,7 +26,7 @@ A responsive Spotify-inspired music streaming web application built using HTML, 
 
 
 ```text
-Spotify Clone/
+Spotify-Music-Player-Clone/
 │
 ├── Icons/
 ├── Music/
@@ -54,11 +54,11 @@ Through this project, I gained practical experience in:
 
 ### Desktop view
 
-![Desktop](screenshots/desktop%20view.png)
+![Desktop](screenshots/desktop-view.png)
 
 ### Mobile view
 
-![Mobile](screenshots/mobile%20view.png)
+![Mobile](screenshots/mobile-view.png)
 
 ## 🌐 Live Demo
 
