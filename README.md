@@ -40,17 +40,27 @@ Spotify Clone/
 
 Through this project, I gained practical experience in:
 
-DOM Manipulation
-Event Handling
-Audio API Integration
-Responsive Web Design
-JavaScript Async Functions
-Dynamic Content Rendering
-UI/UX Development
+- DOM Manipulation
+- Event Handling
+- Audio API Integration
+- Responsive Web Design
+- JavaScript Async Functions
+- Dynamic Content Rendering
+- UI/UX Development
 
 📸 Screenshots
-Screenshot 2026-06-02 010005.png
-Screenshot 2026-06-02 010027.png
+
+### Desktop view
+
+![Desktop](screenshots/desktop%20view.png)
+
+### Mobile view
+
+![Mobile](screenshots/mobile%20view.png)
+
+🌐 Live Demo
+
+https://spotify-clone-old-version.netlify.app/
 
 👨‍💻 Author
 Muhammad Farhan
