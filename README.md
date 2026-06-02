@@ -25,23 +25,17 @@ A responsive Spotify-inspired music streaming web application built using HTML, 
 ## 📂 Project Structure
 
 
+```text
 Spotify Clone/
-
 │
-
 ├── Icons/
-
 ├── Music/
-
 ├── index.html
-
 ├── style.css
-
 ├── utility.css
-
 ├── script.js
-
 └── favicon.ico
+```
 
 
 ## 🎯 Learning Outcomes
@@ -72,3 +66,5 @@ Through this project, I gained practical experience in:
 
 ## 👨‍💻 Author
 Muhammad Farhan
+
+GitHub: https://github.com/Fury85
